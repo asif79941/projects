@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Insurance Prediction</h1>
+    <form  method = "post">
+        {% csrf_token %}
+         age: <input type="text" name="age"><br>
+         <br>
+         bmi: <input type="text" name="bmi"><br>
+         <br>
+         sex: <input type="text" name="sex"><br>
+         <br>
+         children: <input type="text" name="children"><br>
+         <br>
+         smoker: <input type="text" name="smoker"><br>
+         <br>
+         region: <input type="text" name="region"><br>
+         <br>
+         <input type="submit" value="predict">
+    </form>
+    
+</body>
+</html>
